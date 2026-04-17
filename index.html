@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="ชิฟฟ่อนมะพร้าวอ่อนลาวา สูตรเค้กนุ่มละมุน ไส้ลาวาเยิ้ม หอมมะพร้าวอ่อนแท้ 100% พร้อมเทคนิคแก้ปัญหาเค้กไม่ฟู ไส้ไม่ไหล สอนละเอียด อ่านง่าย">
+    content="ชิฟฟ่อนมะพร้าวอ่อนลาวา สูตรเค้กนุ่มละมุน ไส้ลาวาเยิ้ม หอมมะพร้าวอ่อนแท้ 100% แจกสูตรชิฟฟ่อนมะพร้าวอ่อนลาวาแบบละเอียด พร้อมเทคนิคแก้ปัญหาเค้กไม่ฟู ไส้ไม่ไหล สอนละเอียด อ่านง่าย พร้อมเทคนิคทำให้เค้กนุ่มฟู ไส้ลาวาเยิ้ม มือใหม่ก็ทำได้">
   <title>ชิฟฟ่อนมะพร้าวอ่อนลาวา | สูตรเค้กนุ่ม ไส้ลาวาเยิ้ม พร้อมเทคนิคแก้ปัญหา</title>
 
   <!-- Tailwind CSS -->
@@ -83,7 +83,192 @@
       opacity: 1;
       transform: translateY(-5px);
     }
+
+    <style>.gallery-card {
+      min-width: 260px;
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.4s ease;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .gallery-info {
+      padding: 16px;
+    }
+
+    .gallery-info h4 {
+      font-weight: 700;
+      color: #3f2e25;
+    }
+
+    .gallery-info p {
+      font-size: 12px;
+      color: #888;
+    }
+
+    /* Auto scroll */
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-scroll {
+      animation: scroll 25s linear infinite;
+    }
+
+    /* Pause on hover */
+    .animate-scroll:hover {
+      animation-play-state: paused;
+    }
+
+    /* ========= GALLERY ========= */
+    .gallery-section {
+      background: var(--brown-deep);
+      overflow: hidden;
+      padding: 80px 0;
+    }
+
+    .gallery-head {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .gallery-head .section-label {
+      justify-content: center;
+    }
+
+    .gallery-head .section-label::before {
+      display: none;
+    }
+
+    .gallery-head .section-title {
+      color: var(--white-pure);
+    }
+
+    .gallery-strip {
+      display: flex;
+      gap: 20px;
+      animation: stripScroll 30s linear infinite;
+      width: max-content;
+    }
+
+    .gallery-strip:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes stripScroll {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .gallery-card {
+      width: 260px;
+      border-radius: 20px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery-card:hover {
+      transform: scale(1.04);
+    }
+
+    .gallery-img {
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gallery-card-info {
+      padding: 16px;
+    }
+
+    .gallery-card-info h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--white-pure);
+      margin-bottom: 4px;
+    }
+
+    .gallery-card-info p {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .fade-in {
+      animation: fadeUp 0.8s ease;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="images/favicon_io/apple-touch-icon.png">
+
+  <script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [
+{
+"@type": "Question",
+"name": "ทำไมชิฟฟ่อนไม่ฟู?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "เพราะตีไข่ขาวไม่ถึง Stiff Peak หรือผสมแรงเกินไป"
+}
+},
+{
+"@type": "Question",
+"name": "มือใหม่ทำชิฟฟ่อนได้ไหม?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "ได้ ถ้าทำตามขั้นตอนและเข้าใจการตีไข่ขาว"
+}
+}
+]
+}
+</script>
 </head>
 
 <body class="bg-[#fffdf7] text-[#3f2e25]">
@@ -97,24 +282,33 @@
     </svg>
   </button>
 
-  <!-- NAVBAR -->
+  <!-- เมนูบาร์ NAVBAR -->
   <nav class="glass-nav border-b border-[#ede4d3] sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-        <div class="w-10 h-10 bg-[#ede4d3] rounded-xl flex items-center justify-center text-2xl shadow-inner">🥥</div>
-        <h1 class="heading-font text-xl font-bold tracking-tight hidden sm:block">Crazy Bakery</h1>
+        <div
+          class="w-10 h-10 rounded-xl overflow-hidden shadow-inner bg-white flex items-center justify-center border border-[#ede4d3]">
+          <img src="images/favicon_io/android-chrome-512x512.png" alt="Crazy Bakery Logo"
+            class="w-6 h-6 object-contain">
+        </div>
+        <h1 class="heading-font text-lg sm:text-xl font-bold tracking-tight">Crazy Bakery</h1>
       </div>
 
       <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-        <a href="#about" class="hover:text-[#d9c9b0] transition-colors">จุดเด่น</a>
-        <a href="#recipes" class="hover:text-[#d9c9b0] transition-colors">สูตรทำขาย</a>
-        <a href="#details" class="hover:text-[#d9c9b0] transition-colors">วิธีทำละเอียด</a>
+        <a href="#chiffon-coconut-lava-origin" class="hover:text-[#d9c9b0] transition-colors">แหล่งที่มา</a>
+        <a href="#why-sells" class="hover:text-[#d9c9b0] transition-colors">ทำไมขายดี</a>
+        <a href="#recipes" class="hover:text-[#d9c9b0] transition-colors">แจกสูตรทำขาย</a>
         <a href="#problems" class="hover:text-[#d9c9b0] transition-colors">แก้ปัญหา</a>
+        <a href="#storage" class="hover:text-[#d9c9b0] transition-colors">วิธีเก็บ</a>
       </div>
 
-      <a href="#recipes"
-        class="px-6 py-2.5 bg-[#3f2e25] text-white rounded-full text-sm font-bold hover:bg-black transition-all shadow-lg hover:shadow-xl">
-        ดูสูตรทั้งหมด
+      <a href="https://lin.ee/Op8wwYB" target="_blank" class="relative px-6 py-2.5 rounded-full text-sm font-semibold 
+bg-white/80 backdrop-blur-md border border-[#ede4d3] 
+text-[#3f2e25] shadow-md 
+hover:bg-[#3f2e25] hover:text-white 
+transition-all duration-300 flex items-center gap-2">
+        <span>🍰 สั่งชิม</span>
+        <span class="text-[#d9c9b0] font-bold">LINE</span>
       </a>
     </div>
   </nav>
@@ -164,8 +358,253 @@
     </div>
   </header>
 
-  <!-- RECIPES SECTION -->
-  <section id="recipes" class="py-24 bg-white">
+  <!--แหล่งที่มาของ ORIGIN SECTION -->
+  <section id="chiffon-coconut-lava-origin" class="py-24 bg-[#fffdf7]">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- Image -->
+      <div class="relative">
+        <div class="absolute -inset-4 bg-[#d9c9b0] rounded-[3rem] blur-2xl opacity-20"></div>
+        <img src="https://picsum.photos/id/1080/800/800" alt="ชิฟฟ่อนมะพร้าวอ่อนลาวา"
+          class="relative rounded-[2.5rem] shadow-xl w-full object-cover border-8 border-white">
+      </div>
+
+      <!-- Content -->
+      <div class="space-y-6">
+        <span class="uppercase text-xs tracking-[0.3em] text-[#d9c9b0] font-black">
+          Story Behind
+        </span>
+
+        <h2 class="heading-font text-4xl md:text-5xl font-bold leading-tight">
+          แหล่งที่มาของ<br>
+          <span class="text-[#d9c9b0]">ชิฟฟ่อนมะพร้าวอ่อนลาวา</span>
+        </h2>
+
+        <p class="text-gray-600 leading-relaxed text-lg">
+          ชิฟฟ่อนมะพร้าวอ่อนลาวา เป็นการผสมผสานระหว่าง “ชิฟฟ่อนเค้กสไตล์ญี่ปุ่น”
+          ที่มีเนื้อเบา นุ่มฟู กับ “วัตถุดิบไทยแท้” อย่างมะพร้าวอ่อน
+          จนเกิดเป็นเมนูที่ทั้งหอม มัน และละมุนในแบบเฉพาะตัว
+        </p>
+
+        <p class="text-gray-600 leading-relaxed">
+          จุดเด่นของเมนูนี้คือ “ไส้ลาวา” ที่พัฒนาให้มีความเยิ้มกำลังดี
+          ไม่เหลวจนเลอะ และไม่ข้นจนเสียความฟิน
+          กลายเป็นเมนูยอดนิยมทั้งในร้านเบเกอรี่และตลาดออนไลน์
+        </p>
+
+        <div class="bg-white p-6 rounded-2xl border border-[#ede4d3] shadow-sm">
+          <p class="text-sm text-gray-700">
+            💡 <strong>Key Insight:</strong> เมนูนี้ได้รับความนิยมสูงเพราะ “รสชาติไทย + เทคนิคญี่ปุ่น”
+            ทำให้เข้าถึงลูกค้าได้ง่าย และขายได้จริงในทุกช่องทาง
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ORIGIN DETAIL SECTION -->
+  <section class="py-24 bg-[#f8f4eb]">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Header -->
+      <div class="text-center mb-16">
+        <span class="uppercase text-xs tracking-[0.3em] text-[#d9c9b0] font-black">
+          Origin Story
+        </span>
+        <h2 class="heading-font text-5xl font-bold mt-4">
+          จุดกำเนิดของชิฟฟ่อนมะพร้าวอ่อนลาวา
+        </h2>
+        <p class="text-gray-500 mt-4 max-w-2xl mx-auto text-lg">
+          จากเค้กสไตล์อเมริกัน สู่เมนูยอดฮิตที่ผสมผสานวัตถุดิบไทยได้อย่างลงตัว
+        </p>
+        <div class="w-24 h-1.5 bg-[#d9c9b0] mx-auto mt-6 rounded-full"></div>
+      </div>
+
+      <!-- Intro -->
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <p class="text-gray-600 leading-relaxed text-lg">
+          ชิฟฟ่อนมะพร้าวอ่อนลาวา เป็นเมนูที่ถูกพัฒนามาจาก
+          <strong>“Chiffon Cake”</strong> ของสหรัฐอเมริกา
+          ผสมผสานกับ <strong>“มะพร้าวน้ำหอมไทย”</strong>
+          จนกลายเป็นเมนูยอดนิยมที่ทั้งนุ่ม หอม และมีเอกลักษณ์เฉพาะตัว
+        </p>
+      </div>
+
+      <!-- Grid Content -->
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <!-- 1 -->
+        <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-[#ede4d3]">
+          <div class="text-4xl mb-4">🇺🇸</div>
+          <h3 class="font-bold text-xl mb-4">ต้นกำเนิดชิฟฟ่อน</h3>
+
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">
+            ชิฟฟ่อนเค้กถูกคิดค้นในปี <strong>ค.ศ. 1927</strong> โดย
+            <strong>Harry Baker</strong> ชาวอเมริกัน
+          </p>
+
+          <p class="text-sm text-gray-600 leading-relaxed">
+            จุดเด่นคือการใช้น้ำมันพืชแทนเนย
+            ทำให้เค้กมีความ <strong>นุ่ม เบา แต่ยังชุ่มฉ่ำ</strong>
+            ซึ่งเป็นสูตรลับที่ถูกเก็บไว้นานกว่า 20 ปี
+          </p>
+
+          <div class="mt-4 text-xs text-[#d9c9b0] font-semibold">
+            ✨ ถูกเผยแพร่สู่โลกโดย General Mills (1947)
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="bg-[#3f2e25] text-white p-8 rounded-[2.5rem] shadow-xl scale-105">
+          <div class="text-4xl mb-4">🥥</div>
+          <h3 class="font-bold text-xl mb-4">พัฒนาในประเทศไทย</h3>
+
+          <p class="text-sm text-gray-300 leading-relaxed mb-4">
+            เริ่มจาก <strong>ชิฟฟ่อนมะพร้าวอ่อน</strong>
+            ที่เป็นของฝากยอดนิยมในหลายจังหวัด
+          </p>
+
+          <p class="text-sm text-gray-300 leading-relaxed">
+            ต่อมาเมื่อเทรนด์ <strong>“ลาวา”</strong> ได้รับความนิยม
+            จึงเกิดการนำซอสมะพร้าวมาสอดไส้
+            ให้เกิดเอฟเฟกต์ไหลเยิ้ม
+          </p>
+
+          <div class="mt-4 text-xs text-[#d9c9b0] font-semibold">
+            🔥 จุดเริ่มของ “เค้กไส้ทะลัก”
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-[#ede4d3]">
+          <div class="text-4xl mb-4">📈</div>
+          <h3 class="font-bold text-xl mb-4">ทำไมถึงฮิต?</h3>
+
+          <ul class="text-sm text-gray-600 space-y-3 leading-relaxed">
+            <li>✔ มะพร้าวไทยหอม หวาน ธรรมชาติ</li>
+            <li>✔ เนื้อเค้กนุ่ม + ไส้ลาวาเนียน</li>
+            <li>✔ เทรนด์ลาวาทำให้ดูน่ากิน</li>
+          </ul>
+
+          <p class="text-sm text-gray-600 mt-4">
+            กลายเป็นเมนูมาตรฐานของร้านเบเกอรี่ทั่วประเทศ
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Highlight -->
+      <div class="mt-20 max-w-4xl mx-auto bg-[#f8f4eb] p-10 rounded-[3rem] text-center border border-[#ede4d3]">
+        <p class="heading-font text-2xl text-[#3f2e25] italic leading-relaxed">
+          “จากสูตรลับในอเมริกา<br>
+          สู่ขนมยอดฮิตที่คนไทยหลงรัก”
+        </p>
+
+        <div class="w-12 h-1 bg-[#d9c9b0] mx-auto my-6 rounded-full"></div>
+        <p class="text-sm text-gray-500">
+          ปัจจุบันแต่ละร้านมีสูตรเฉพาะ เช่น เพิ่มความเค็มตัดหวาน
+          หรือใช้มะพร้าวเผาเพื่อเพิ่มกลิ่นหอม
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY IT SELLS (IMAGE RIGHT) -->
+  <section id="why-sells" class="py-24 bg-[#fffdf7]">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- LEFT CONTENT -->
+      <div>
+
+        <!-- Heading -->
+        <div class="mb-10">
+          <span class="uppercase text-xs tracking-[0.3em] text-[#d9c9b0] font-black">
+            Why It Sells
+          </span>
+
+          <h2 class="heading-font text-5xl font-bold mt-4 leading-tight">
+            ทำไมชิฟฟ่อนมะพร้าวอ่อนลาวา <span class="text-[#d9c9b0]">ถึงขายดี?</span>
+          </h2>
+
+          <p class="text-gray-500 mt-4 max-w-xl text-lg">
+            ไม่ใช่แค่อร่อย แต่เป็นเมนูที่ “ตอบโจทย์ตลาด” ทั้งรสชาติและการขาย
+          </p>
+        </div>
+
+        <!-- LIST -->
+        <div class="space-y-6">
+
+          <div class="flex gap-4">
+            <div class="text-3xl">🥥</div>
+            <div>
+              <h3 class="font-bold">วัตถุดิบไทย หอมโดนใจ</h3>
+              <p class="text-sm text-gray-600">มะพร้าวน้ำหอมให้รสชาติหวานธรรมชาติ กินง่ายทุกวัย</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="text-3xl">🌋</div>
+            <div>
+              <h3 class="font-bold">ลาวาเยิ้ม = จุดขาย</h3>
+              <p class="text-sm text-gray-600">ผ่าแล้วไหลเยิ้ม ถ่ายรูปสวย แชร์ง่าย</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="text-3xl">☁️</div>
+            <div>
+              <h3 class="font-bold">Texture แตกต่าง</h3>
+              <p class="text-sm text-gray-600">นุ่มฟู + ลาวาเนียน + มะพร้าวเคี้ยวเพลิน</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="text-3xl">💰</div>
+            <div>
+              <h3 class="font-bold">กำไรดี ทำขายได้จริง</h3>
+              <p class="text-sm text-gray-600">ต้นทุนต่ำ ตั้งราคาขายได้สูง</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="text-3xl">📦</div>
+            <div>
+              <h3 class="font-bold">ขายได้ทุกช่องทาง</h3>
+              <p class="text-sm text-gray-600">หน้าร้าน / ออนไลน์ / เดลิเวอรี่</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="relative group">
+
+        <!-- Glow -->
+        <div
+          class="absolute -inset-4 bg-[#d9c9b0] rounded-[3rem] blur-2xl opacity-20 group-hover:opacity-30 transition">
+        </div>
+
+        <!-- Image -->
+        <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?q=80&w=800" alt="ชิฟฟ่อนมะพร้าวอ่อนลาวา"
+          class="relative rounded-[3rem] shadow-2xl w-full object-cover border-8 border-white">
+
+        <!-- Badge -->
+        <div class="absolute bottom-6 left-6 bg-white px-5 py-3 rounded-2xl shadow-xl border border-[#ede4d3]">
+          <p class="text-sm font-bold text-[#3f2e25]">🔥 เมนูขายดีอันดับต้นๆ</p>
+          <p class="text-xs text-gray-500">ยอดนิยมในร้านเบเกอรี่</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!--------- แจกฟรีสูตรทำขาย ---------------->
+  <section id="recipes" class="py-24 bg-[#f8f4eb]">
     <div class="max-w-7xl mx-auto px-6 text-center mb-16">
       <h2 class="heading-font text-5xl font-bold mb-4">แจกฟรีสูตรทำขาย</h2>
       <p class="text-gray-500 text-lg">คัดมาแล้ว 3 สูตรที่ทำง่ายและขายดีที่สุด</p>
@@ -214,18 +653,18 @@
     </div>
   </section>
 
-  <!------------ สูตรและวิธีทำ DETAILED RECIPE CONTENT SECTION --------------->
+  <!------------ ส่วนผมและวิธีทำ DETAILED RECIPE CONTENT SECTION --------------->
   <section id="details" class="py-24 bg-[#fffdf7]">
-    <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-7xl mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="heading-font text-5xl font-bold mb-4 italic">สูตรและวิธีทำ</h2>
+        <h2 class="heading-font text-5xl font-bold mb-4 italic">ส่วนผสมและวิธีทำ</h2>
         <p class="text-gray-500">จดบันทึกสูตรลับส่งตรงจากเชฟ ทำตามได้ทันที</p>
       </div>
 
       <!-- 🥥 สูตรชิฟฟ่อนมะพร้าวอ่อนลาวา (Classic) -->
       <!-- Recipe Detail: Coconut (Classic) -->
       <div id="recipe-coconut"
-        class="max-w-6xl mx-auto bg-white rounded-[3rem] shadow-xl border border-[#ede4d3] overflow-hidden mb-12">
+        class="max-w-7xl mx-auto bg-white rounded-[3rem] shadow-xl border border-[#ede4d3] overflow-hidden mb-12">
         <!-- Header Section -->
         <div class="bg-[#3f2e25] p-10 text-white flex flex-col md:flex-row justify-between items-center gap-6">
           <div>
@@ -248,17 +687,20 @@
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>ไข่แดง (เบอร์
                       1)</span> <span class="font-semibold">4 ฟอง</span></li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>น้ำตาลทราย</span>
-                    <span class="font-semibold">25 กรัม</span></li>
+                    <span class="font-semibold">25 กรัม</span>
+                  </li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>เกลือ</span> <span
                       class="font-semibold">¼ ช้อนชา</span></li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>น้ำมันพืช</span>
-                    <span class="font-semibold">60 มล.</span></li>
+                    <span class="font-semibold">60 มล.</span>
+                  </li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>น้ำมะพร้าวอ่อน
                       (หรือกะทิ)</span> <span class="font-semibold">30 กรัม</span></li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>กะทิ
                       (เพิ่มความมัน)</span> <span class="font-semibold">30 กรัม</span></li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>แป้งเค้ก</span>
-                    <span class="font-semibold">80 กรัม</span></li>
+                    <span class="font-semibold">80 กรัม</span>
+                  </li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>ผงฟู</span> <span
                       class="font-semibold">½ ช้อนชา</span></li>
                 </ul>
@@ -272,9 +714,11 @@
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>ไข่ขาว</span> <span
                       class="font-semibold">4 ฟอง</span></li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>น้ำตาลทราย</span>
-                    <span class="font-semibold">30 กรัม</span></li>
+                    <span class="font-semibold">30 กรัม</span>
+                  </li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1">
-                    <span>ครีมออฟทาร์ทาร์</span> <span class="font-semibold">¼ ช้อนชา</span></li>
+                    <span>ครีมออฟทาร์ทาร์</span> <span class="font-semibold">¼ ช้อนชา</span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -287,13 +731,16 @@
                 </h4>
                 <ul class="space-y-2 text-gray-700">
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1">
-                    <span>น้ำมะพร้าวอ่อน</span> <span class="font-semibold">150-300 มล.</span></li>
+                    <span>น้ำมะพร้าวอ่อน</span> <span class="font-semibold">150-300 มล.</span>
+                  </li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>กะทิ
                       (หัวกะทิ)</span> <span class="font-semibold">100-150 มล.</span></li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>แป้งข้าวโพด</span>
-                    <span class="font-semibold">15-30 กรัม</span></li>
+                    <span class="font-semibold">15-30 กรัม</span>
+                  </li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1">
-                    <span>เนื้อมะพร้าวอ่อนสับหยาบ</span> <span class="font-semibold">80-130 กรัม</span></li>
+                    <span>เนื้อมะพร้าวอ่อนสับหยาบ</span> <span class="font-semibold">80-130 กรัม</span>
+                  </li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>เนย
                       (optional)</span> <span class="font-semibold">5-10 กรัม</span></li>
                 </ul>
@@ -383,7 +830,7 @@
 
       <!-- Recipe Detail: Soft Cheese Lava -->
       <div id="recipe-cheese"
-        class="max-w-6xl mx-auto bg-white rounded-[3rem] shadow-xl border border-[#e0e7ff] overflow-hidden mb-12">
+        class="max-w-7xl mx-auto bg-white rounded-[3rem] shadow-xl border border-[#e0e7ff] overflow-hidden mb-12">
         <!-- Header Section -->
         <div class="bg-[#1e1b4b] p-10 text-white flex flex-col md:flex-row justify-between items-center gap-6">
           <div>
@@ -424,9 +871,11 @@
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>ไข่ขาว</span> <span
                       class="font-semibold">4 ฟอง</span></li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>น้ำตาลทราย</span>
-                    <span class="font-semibold">50 กรัม</span></li>
+                    <span class="font-semibold">50 กรัม</span>
+                  </li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1">
-                    <span>ครีมออฟทาร์ทาร์</span> <span class="font-semibold">¼ ช้อนชา</span></li>
+                    <span>ครีมออฟทาร์ทาร์</span> <span class="font-semibold">¼ ช้อนชา</span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -439,11 +888,13 @@
                 </h4>
                 <ul class="space-y-2 text-gray-700">
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>ครีมชีส</span>
-                    <span class="font-semibold">150 กรัม</span></li>
+                    <span class="font-semibold">150 กรัม</span>
+                  </li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>วิปปิ้งครีม /
                       นมสด</span> <span class="font-semibold">200มล. / 60มล.</span></li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>น้ำตาลไอซิ่ง</span>
-                    <span class="font-semibold">20-30 กรัม</span></li>
+                    <span class="font-semibold">20-30 กรัม</span>
+                  </li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>เกลือทะเล (Sea
                       Salt)</span> <span class="font-semibold">½-¾ ช้อนชา</span></li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>เนย
@@ -537,7 +988,7 @@
 
       <!-- Recipe Detail: Matcha Lava -->
       <div id="recipe-matcha"
-        class="max-w-6xl mx-auto bg-white rounded-[3rem] shadow-xl border border-[#ecfccb] overflow-hidden">
+        class="max-w-7xl mx-auto bg-white rounded-[3rem] shadow-xl border border-[#ecfccb] overflow-hidden">
         <!-- Header Section -->
         <div class="bg-[#166534] p-10 text-white flex flex-col md:flex-row justify-between items-center gap-6">
           <div>
@@ -560,7 +1011,8 @@
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>ไข่แดง (เบอร์
                       2)</span> <span class="font-semibold">3-4 ฟอง</span></li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1">
-                    <span>ผงมัทฉะคุณภาพดี</span> <span class="font-semibold">8-15 กรัม</span></li>
+                    <span>ผงมัทฉะคุณภาพดี</span> <span class="font-semibold">8-15 กรัม</span>
+                  </li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>น้ำตาลทราย /
                       เกลือ</span> <span class="font-semibold">30-50ก. / ¼ชช.</span></li>
                   <li class="flex justify-between border-b border-dashed border-gray-100 pb-1"><span>นมสดจืด /
@@ -682,6 +1134,111 @@
     </div>
   </section>
 
+  <!-- เทคนิคทำให้ชิฟฟ่อนมะพร้าวอ่อนลาวา ออกมาสมบูรณ์แบบ EXPERT TIPS SECTION -->
+  <!-- EXPERT MASTER TIPS -->
+  <section class="py-24 bg-[#fffdf7]">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Header -->
+      <div class="text-center mb-16">
+        <span class="uppercase text-xs tracking-[0.3em] text-[#d9c9b0] font-black">
+          Expert Tips
+        </span>
+
+        <h2 class="heading-font text-5xl font-bold mt-4 leading-tight">
+          เคล็ดลับทำชิฟฟ่อนลาวา<br>
+          <span class="text-[#d9c9b0]">ให้สมบูรณ์แบบ</span>
+        </h2>
+
+        <p class="text-gray-500 mt-4 max-w-3xl mx-auto text-lg">
+          นุ่มฟู ไส้ลาวาเยิ้ม อยู่กลาง ไม่จม ไม่ปลิ้น หน้าเด้งสวย
+        </p>
+      </div>
+
+      <!-- 3 CORE SYSTEM -->
+      <div class="grid lg:grid-cols-3 gap-10">
+
+        <!-- 1 LAVA -->
+        <div class="bg-white p-8 rounded-[2.5rem] border border-[#ede4d3] shadow-sm">
+          <div class="text-4xl mb-4">🌋</div>
+          <h3 class="font-bold text-xl mb-4">1. ไส้ลาวา (ต้องข้น + เย็น)</h3>
+
+          <ul class="text-sm text-gray-600 space-y-3 leading-relaxed">
+            <li>✔ กวนจนข้นเหมือนคัสตาร์ด</li>
+            <li>✔ พักให้เย็นหรือแช่ตู้เย็นก่อนใช้</li>
+            <li>✔ ใช้มะพร้าวอ่อนเนื้อแข็งเล็กน้อย</li>
+            <li>✔ ห้ามใส่ไส้ร้อน (เค้กยุบทันที)</li>
+          </ul>
+
+          <div class="mt-4 text-xs text-[#d9c9b0] font-semibold">
+            💡 ไส้ต้อง “เซ็ตตัว” ก่อนอบ
+          </div>
+        </div>
+
+        <!-- 2 CAKE -->
+        <div class="bg-[#3f2e25] text-white p-8 rounded-[2.5rem] shadow-xl scale-105">
+          <div class="text-4xl mb-4">☁️</div>
+          <h3 class="font-bold text-xl mb-4">2. เนื้อชิฟฟ่อน (หัวใจหลัก)</h3>
+
+          <ul class="text-sm text-gray-300 space-y-3 leading-relaxed">
+            <li>✔ ไข่ขาวตีระดับยอดอ่อน-กลาง</li>
+            <li>✔ ใช้ไข่อุณหภูมิห้อง</li>
+            <li>✔ ร่อนแป้ง 2–3 รอบ</li>
+            <li>✔ ฟอลด์เบามือ ห้ามคนแรง</li>
+            <li>✔ ไม่ทาเนยพิมพ์</li>
+          </ul>
+
+          <div class="mt-4 text-xs text-[#d9c9b0] font-semibold">
+            ⭐ จุดตัดสิน “นุ่มหรือพัง”
+          </div>
+        </div>
+
+        <!-- 3 TECHNIQUE -->
+        <div class="bg-white p-8 rounded-[2.5rem] border border-[#ede4d3] shadow-sm">
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="font-bold text-xl mb-4">3. เทคนิคล็อคไส้</h3>
+
+          <ul class="text-sm text-gray-600 space-y-3 leading-relaxed">
+            <li>✔ เทแป้งครึ่งพิมพ์ก่อน</li>
+            <li>✔ วางไส้ตรงกลาง (ไม่เยอะ)</li>
+            <li>✔ ปิดด้วยแป้งอีกชั้น</li>
+            <li>✔ ไส้ต้องไม่แตะก้นพิมพ์</li>
+          </ul>
+
+          <div class="mt-4 text-xs text-[#d9c9b0] font-semibold">
+            🔥 เคล็ดลับลาวาอยู่กลางเป๊ะ
+          </div>
+        </div>
+
+      </div>
+
+      <!-- EXTRA TIPS -->
+      <div class="mt-20 bg-white p-10 rounded-[3rem] border border-[#ede4d3] max-w-7xl mx-auto">
+
+        <h3 class="text-2xl font-bold text-center mb-8">
+          💡 เคล็ดลับเพิ่มเติม (ระดับร้านขายจริง)
+        </h3>
+
+        <div class="grid md:grid-cols-2 gap-6 text-sm text-gray-600">
+
+          <div>✔ ชั่งวัตถุดิบให้แม่นยำ</div>
+          <div>✔ อบ 170°C ไฟบน-ล่าง ไม่ใช้พัดลม</div>
+          <div>✔ หลังอบคว่ำพิมพ์ทันที ป้องกันยุบ</div>
+          <div>✔ ไส้จม = ไส้เหลวเกิน หรือฐานบางเกิน</div>
+          <div>✔ เค้กไม่ฟู = ตีไข่ขาวไม่พอ</div>
+          <div>✔ ทำขาย = อบวันต่อวัน สดที่สุด</div>
+
+        </div>
+
+        <div class="text-center mt-8 text-gray-500 text-sm">
+          ✨ เทคนิคเหล่านี้คือสิ่งที่ทำให้ “เค้กบ้าน” กลายเป็น “เค้กร้านดัง”
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
   <!---------------- ปัญหาที่พบบ่อย ------------------->
   <section id="problems" class="py-24 bg-[#f8f4eb]">
     <div class="max-w-7xl mx-auto px-6">
@@ -692,7 +1249,7 @@
           เพื่อให้เค้กของคุณออกมาสมบูรณ์แบบที่สุด</p>
       </div>
 
-      <div class="max-w-6xl mx-auto space-y-4">
+      <div class="max-w-7xl mx-auto space-y-4">
 
         <!-- ปัญหา 1 -->
         <details
@@ -893,26 +1450,217 @@
             </div>
           </div>
         </details>
-
-      </div>
-
-      <!-- คำคมปิดท้าย -->
-      <div
-        class="mt-20 text-center bg-white rounded-[3rem] p-12 max-w-3xl mx-auto shadow-sm border border-[#ede4d3] relative">
-        <div
-          class="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#3f2e25] text-white px-6 py-2 rounded-full text-xs font-bold tracking-widest uppercase">
-          Bakery Wisdom</div>
-        <p class="heading-font italic text-2xl md:text-3xl text-[#3f2e25] leading-relaxed">
-          "ปัญหาส่วนใหญ่ของชิฟฟ่อนเกิดจากความรีบ<br class="hidden md:block"> และการไม่เคารพฟองอากาศ"
-        </p>
-        <div class="w-12 h-1 bg-[#d9c9b0] mx-auto my-6 rounded-full"></div>
-        <p class="text-sm font-bold tracking-[0.2em] text-[#d9c9b0] uppercase">— สูตรมะพร้าวอ่อนลาวา —</p>
       </div>
     </div>
   </section>
 
+  <!-- PREMIUM GALLERY -->
+  <section class="gallery-section" class="py-24 bg-[#f8f4eb] overflow-hidden"
+    aria-label="แกลเลอรีชิฟฟ่อนมะพร้าวอ่อนลาวา">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Header -->
+      <div class="text-center mb-16">
+        <span class="uppercase text-xs tracking-[0.3em] text-[#d9c9b0] font-black">
+          Gallery
+        </span>
+
+        <h2 class="heading-font text-5xl font-bold mt-4">
+          ภาพชิฟฟ่อนมะพร้าวอ่อนลาวา
+        </h2>
+
+        <p class="text-gray-500 mt-4 max-w-xl mx-auto">
+          นุ่ม หอม เยิ้มทุกคำ ถ่ายจริงจากสินค้าของเรา
+        </p>
+
+        <div class="w-24 h-1.5 bg-[#d9c9b0] mx-auto mt-6 rounded-full"></div>
+      </div>
+
+    </div>
+
+    <!-- Slider -->
+    <div class="relative">
+      <div class="flex gap-8 animate-scroll whitespace-nowrap">
+
+        <!-- CARD -->
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?q=80&w=600" alt="ชิฟฟ่อนมะพร้าวลาวา"
+            class="gallery-img">
+          <div class="gallery-info">
+            <h4>ลาวามะพร้าวคลาสสิก</h4>
+            <p>ไส้เยิ้ม หอมมัน</p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?q=80&w=600" class="gallery-img">
+          <div class="gallery-info">
+            <h4>ลาวาครีมมะพร้าว</h4>
+            <p>เนียนละมุน</p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=600" class="gallery-img">
+          <div class="gallery-info">
+            <h4>ลาวาเนื้อเข้ม</h4>
+            <p>ฟินทุกคำ</p>
+          </div>
+        </div>
+
+        <!-- Duplicate loop -->
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?q=80&w=600" class="gallery-img">
+          <div class="gallery-info">
+            <h4>ลาวามะพร้าวคลาสสิก</h4>
+            <p>ไส้เยิ้ม หอมมัน</p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?q=80&w=600" class="gallery-img">
+          <div class="gallery-info">
+            <h4>ลาวาครีมมะพร้าว</h4>
+            <p>เนียนละมุน</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?q=80&w=600" class="gallery-img">
+          <div class="gallery-info">
+            <h4>ลาวามะพร้าวคลาสสิก</h4>
+            <p>ไส้เยิ้ม หอมมัน</p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?q=80&w=600" class="gallery-img">
+          <div class="gallery-info">
+            <h4>ลาวาครีมมะพร้าว</h4>
+            <p>เนียนละมุน</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?q=80&w=600" class="gallery-img">
+          <div class="gallery-info">
+            <h4>ลาวามะพร้าวคลาสสิก</h4>
+            <p>ไส้เยิ้ม หอมมัน</p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?q=80&w=600" class="gallery-img">
+          <div class="gallery-info">
+            <h4>ลาวาครีมมะพร้าว</h4>
+            <p>เนียนละมุน</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- วิธีเก็บชิฟฟ่อนมะพร้าวอ่อนลาวา STORAGE SECTION -->
+  <section id="storage" class="py-24 bg-[#f8f4eb]">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Header -->
+      <div class="text-center mb-16">
+        <span class="uppercase text-xs tracking-[0.3em] text-[#d9c9b0] font-black">
+          Storage Guide
+        </span>
+
+        <h2 class="heading-font text-5xl font-bold mt-4">
+          วิธีเก็บชิฟฟ่อนมะพร้าวอ่อนลาวา
+        </h2>
+
+        <p class="text-gray-500 mt-4 max-w-2xl mx-auto text-lg">
+          เก็บอย่างถูกวิธี เพื่อให้เค้กนุ่มฟู ไส้ลาวายังคงความอร่อยเหมือนทำใหม่
+        </p>
+
+        <div class="w-24 h-1.5 bg-[#d9c9b0] mx-auto mt-6 rounded-full"></div>
+      </div>
+
+      <!-- Grid -->
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <!-- Room Temp -->
+        <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-[#ede4d3]">
+          <div class="text-4xl mb-4">🌤️</div>
+          <h3 class="font-bold text-xl mb-3">อุณหภูมิห้อง</h3>
+
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">
+            เหมาะสำหรับทานภายในวันเดียว
+          </p>
+
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>✔ เก็บได้ประมาณ 1 วัน</li>
+            <li>✔ วางในที่แห้ง ไม่โดนแดด</li>
+            <li>✔ ปิดกล่องให้สนิท</li>
+          </ul>
+        </div>
+
+        <!-- Fridge -->
+        <div class="bg-[#3f2e25] text-white p-8 rounded-[2.5rem] shadow-xl scale-105">
+          <div class="text-4xl mb-4">❄️</div>
+          <h3 class="font-bold text-xl mb-3">แช่ตู้เย็น</h3>
+
+          <p class="text-sm text-gray-300 leading-relaxed mb-4">
+            วิธีที่ดีที่สุดสำหรับยืดอายุ
+          </p>
+
+          <ul class="text-sm text-gray-300 space-y-2">
+            <li>✔ เก็บได้ 3-5 วัน</li>
+            <li>✔ ใส่กล่องปิดสนิท</li>
+            <li>✔ ป้องกันกลิ่นอาหารอื่น</li>
+          </ul>
+
+          <div class="mt-4 text-xs text-[#d9c9b0] font-semibold">
+            ⭐ แนะนำมากที่สุด
+          </div>
+        </div>
+
+        <!-- Freezer -->
+        <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-[#ede4d3]">
+          <div class="text-4xl mb-4">🧊</div>
+          <h3 class="font-bold text-xl mb-3">แช่แข็ง</h3>
+
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">
+            สำหรับเก็บระยะยาว
+          </p>
+
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>✔ เก็บได้ 2-3 สัปดาห์</li>
+            <li>✔ ห่อฟิล์มก่อนแช่</li>
+            <li>✔ ละลายในตู้เย็นก่อนทาน</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="mt-20 max-w-4xl mx-auto bg-[#f3efe6] p-10 rounded-[3rem] text-center border border-[#e6dccb]">
+        <h3 class="text-lg font-semibold text-[#b68b4c] mb-6 flex items-center justify-center gap-2">
+          💡 เคล็ดลับให้อร่อยเหมือนใหม่
+        </h3>
+        <!-- Divider -->
+        <div class="w-12 h-1 bg-[#d9c9b0] mx-auto my-6 rounded-full"></div>
+
+        <!-- Content -->
+        <p class="heading-font text-2xl text-[#3f2e25] italic leading-relaxed max-w-3xl mx-auto"></p>
+        ก่อนทาน นำออกจากตู้เย็นพักไว้ประมาณ 10–15 นาที<br>
+        หรืออุ่นไมโครเวฟเบาๆ 5–10 วินาที เพื่อให้ไส้ลาวากลับมาเยิ้มและเนื้อเค้กนุ่มเหมือนอบใหม่
+        </p>
+
+        <!-- Warning -->
+        <p class="mt-6 text-sm text-[#3f2e25]">
+          ❌ ไม่ควรเปิดกล่องบ่อย เพราะจะทำให้เค้กแห้งเร็ว
+        </p>
+
+      </div>
+  </section>
+
   <!-- CALL TO ACTION -->
-  <section class="py-20 bg-white">
+  <section class="py-20 bg-[#fffdf7]">
     <div class="max-w-5xl mx-auto px-6">
       <div
         class="bg-[#3f2e25] rounded-[3.5rem] p-10 md:p-20 text-center text-white relative overflow-hidden shadow-2xl">
@@ -925,7 +1673,9 @@
           <div class="flex flex-wrap justify-center gap-5 pt-4">
             <button
               class="px-10 py-5 bg-[#d9c9b0] text-[#3f2e25] rounded-2xl font-black text-lg hover:bg-white transition-all shadow-lg">
-              รับตารางคำนวณต้นทุน 💸
+              <a href="cost_calculator_crazy_bakery.xlsx" download class="block">
+                รับตารางคำนวณต้นทุน 💸
+              </a>
             </button>
           </div>
         </div>
@@ -938,8 +1688,16 @@
     <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
       <div>
         <div class="flex items-center gap-3 mb-6">
-          <div class="w-8 h-8 bg-[#3f2e25] rounded-lg flex items-center justify-center text-lg">🥥</div>
-          <span class="font-bold text-xl heading-font">Crazy Bakery - เค้กชิฟฟ่อนมะพร้าวอ่อนลาวา</span>
+          <div class="flex items-center gap-4 mb-6">
+            <div
+              class="w-12 h-12 rounded-xl overflow-hidden bg-white flex items-center justify-center border border-[#ede4d3] shadow-sm">
+              <img src="images/favicon_io/android-chrome-192x192.png" alt="Crazy Bakery Logo"
+                class="w-full h-full object-contain p-1">
+            </div>
+            <div>
+              <span class="font-bold text-xl heading-font">Crazy Bakery - เค้กชิฟฟ่อนมะพร้าวอ่อนลาวา</span>
+            </div>
+          </div>
         </div>
         <p class="text-gray-500 text-sm max-w-sm">เว็บไซต์แบ่งปันสูตรขนมและเทคนิคการทำเบเกอรี่จากประสบการณ์จริง
           เพื่อช่วยให้มือใหม่เริ่มต้นได้อย่างมั่นใจ</p>
@@ -948,7 +1706,7 @@
         <p class="text-sm font-bold mb-4 uppercase tracking-widest text-gray-400">Copyright 2026</p>
         <div class="flex md:justify-end gap-6 text-sm font-medium">
           <a href="#" class="hover:text-[#d9c9b0]">นโยบายความเป็นส่วนตัว</a>
-          <a href="#" class="hover:text-[#d9c9b0]">ติดต่อสอบถาม</a>
+          <a href="https://lin.ee/Op8wwYB" target="_blank" class="hover:text-[#d9c9b0]">ติดต่อสอบถาม</a>
         </div>
       </div>
     </div>
